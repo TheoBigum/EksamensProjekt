@@ -15,11 +15,11 @@ img {
 }
 
 body {
-    background-color: #373737;
+    background-color: #343434;
 }
 
 h1 {
-    font-family: helvetica;
+    font-family: 'Inconsolata', monospace;
     font-size: 3rem;
     color: #717171;
     margin-left: 80px;
@@ -27,7 +27,7 @@ h1 {
 }
 
 p {
-    font-family: helvetica;
+    font-family: 'Antic Slab', serif;
     font-size: 2em;
     color: #717171;
     margin: 30px;
@@ -37,17 +37,17 @@ p {
 /*NAV*/
 /* unvisited link */
 header nav a:link {
-    color: #717171;
+    color: #ffa500;
 }
 
 /* visited link */
 header nav a:visited {
-    color: #717171;
+    color: orange;
 }
 
 /* mouse over link */
 header nav a:hover {
-    color: #909090;
+    color: #c37e00;
 }
 
 /* selected link */
@@ -65,16 +65,16 @@ header nav {
     display: flex;
     flex-direction: row;
     position: fixed;
-    left: 65%;
+    left: 50em;
 }
 
 header nav a {
     font-size: 2.5rem;
-    font-family: helvetica;
+    font-family: 'Inconsolata', monospace;
     text-decoration: none;
     margin: 1rem;
     padding: 1rem;
-    color: #373737;
+    ;
 }
 
 .sectionwrapper {
@@ -92,6 +92,13 @@ header nav a {
     justify-content: space-around;
 }
 
+.sectionwrapper_circle a {
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: 3rem;
+    color: #373737;
+
+}
 
 .col {
     display: flex;
@@ -100,6 +107,7 @@ header nav a {
 .circle {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     height: 20vw;
     width: 20vw;
     border-radius: 30000px;
@@ -107,4 +115,42 @@ header nav a {
     padding: 7vw;
 }
 
+.circle h1 {
+    margin-left: 0;
+    padding-top: 0;
+    color: #373737;
+}
+
+.circle:hover {
+    background-color: orange;
+    text-decoration-color: grey;
+    cursor: finger;
+}
+
+.sectionwrapper_kontakt {
+    display: flex;
+    margin: 50px;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#kontakt {
+    height: 600px
+}
+
 /*------------FOOTER------------*/
+footer {
+    height: 130px;
+    width: 100%;
+    background-color: #525252;
+}
+
+#some {
+    display: flex;
+    justify-content: space-around;
+}
+
+#some h1:hover {
+    color: orange;
+}
