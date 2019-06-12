@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    background-color: #373737;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #373737;
+}
+
+h1 {
+    font-family: helvetica;
+    font-size: 3rem;
+    color: #717171;
+    margin-left: 80px;
+    padding-top: 50px;
+}
+
+p {
+    font-family: helvetica;
+    font-size: 2em;
+    color: #717171;
+    margin: 30px;
+}
+
+
+/*NAV*/
+/* unvisited link */
+header nav a:link {
+    color: #717171;
+}
+
+/* visited link */
+header nav a:visited {
+    color: #717171;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: #909090;
+}
+
+/* selected link */
+header nav a:active {
+    color: #909090;
+}
+
+header {
+    position: fixed;
+    rgba(0, 212, 255, 0) 100%);
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 65%;
+}
+
+header nav a {
+    font-size: 2.5rem;
+    font-family: helvetica;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+    color: #373737;
+}
+
+.sectionwrapper {
+    display: flex;
+    margin: 50px;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.sectionwrapper_circle {
+    display: flex;
+    margin: 50px;
+    padding-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.col {
+    display: flex;
+}
+
+.circle {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 30000px;
+    background-color: grey;
+    padding: 7vw;
+}
+
+/*------------FOOTER------------*/
