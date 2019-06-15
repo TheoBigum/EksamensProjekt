@@ -16,6 +16,7 @@ img {
 
 body {
     background-color: #011826;
+    height: 100vh;
 }
 
 h1 {
@@ -105,7 +106,7 @@ header nav a {
 .sectionwrapper_circle a {
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #dbcbbb;
     justify-items: center;
 }
@@ -113,7 +114,7 @@ header nav a {
 .sectionwrapper_circle a:hover {
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #000000;
 }
 
@@ -125,11 +126,11 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 10vw;
-    width: 10vw;
-    border-radius: 30000px;
+    height: 13vw;
+    width: 13vw;
+    border-radius: 300px;
     background-color: #4a555b;
-    padding: 4vw;
+    padding: 5vw;
 }
 
 .circle h1 {
@@ -164,9 +165,18 @@ header nav a {
 
 /*------------FOOTER------------*/
 footer {
-    height: 130px;
+    height: 20vh;
     width: 100%;
     background-color: #122d41;
+    position: absolute;
+}
+
+#underside footer {
+    height: 20vh;
+    width: 100%;
+    background-color: #122d41;
+    position: absolute;
+    top: 80vh;
 }
 
 #some {
@@ -178,19 +188,22 @@ footer {
     color: orange;
 }
 
+
 /*-------------Undersider----------------*/
 
-.underside {
+.undersider {
     left: 70em;
 }
 
-.underside a {
+.undersider a {
     font-family: 'Inconsolata', monospace;
 }
 
-#underside {
-    padding-top: 200px
+#underside footer {
+    top: 80vh;
 }
+
+
 
 /*-----------------titel-------------------*/
 #title {
