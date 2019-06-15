@@ -40,7 +40,7 @@ p {
 /*NAV*/
 /* unvisited link */
 header nav a:link {
-    color: #011826;
+    color: #a3998f;
 }
 
 /* visited link */
@@ -107,6 +107,7 @@ header nav a {
     font-family: 'Inconsolata', monospace;
     font-size: 1.5rem;
     color: #dbcbbb;
+    justify-items: center;
 }
 
 .sectionwrapper_circle a:hover {
