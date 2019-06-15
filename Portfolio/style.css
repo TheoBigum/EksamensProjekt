@@ -6,7 +6,7 @@
 
 html {
     font-size: 100%;
-    background-color: #373737;
+    background-color: #011826;
     scroll-behavior: smooth;
 }
 
@@ -15,39 +15,42 @@ img {
 }
 
 body {
-    background-color: #343434;
+    background-color: #011826;
 }
 
 h1 {
     font-family: 'Inconsolata', monospace;
     font-size: 3rem;
-    color: #717171;
+    color: #a3998f;
     margin-left: 80px;
     padding-top: 50px;
+}
+
+h1:hover {
+    color: #f5f5dd;
 }
 
 p {
     font-family: 'Antic Slab', serif;
     font-size: 2em;
-    color: #717171;
+    color: #a3998f;
     margin: 30px;
 }
-
 
 /*NAV*/
 /* unvisited link */
 header nav a:link {
-    color: #ffa500;
+    color: #011826;
 }
 
 /* visited link */
 header nav a:visited {
-    color: orange;
+    color: #a3998f;
 }
 
 /* mouse over link */
 header nav a:hover {
-    color: #c37e00;
+    color: orange;
 }
 
 /* selected link */
@@ -65,7 +68,14 @@ header nav {
     display: flex;
     flex-direction: row;
     position: fixed;
-    left: 50em;
+    left: 50em
+}
+
+index.html header nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 1000px;
 }
 
 header nav a {
@@ -95,9 +105,15 @@ header nav a {
 .sectionwrapper_circle a {
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
-    font-size: 3rem;
-    color: #373737;
+    font-size: 1.5rem;
+    color: #dbcbbb;
+}
 
+.sectionwrapper_circle a:hover {
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    color: #000000;
 }
 
 .col {
@@ -108,23 +124,21 @@ header nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 20vw;
-    width: 20vw;
+    height: 10vw;
+    width: 10vw;
     border-radius: 30000px;
-    background-color: grey;
-    padding: 7vw;
+    background-color: #4a555b;
+    padding: 4vw;
 }
 
 .circle h1 {
     margin-left: 0;
     padding-top: 0;
-    color: #373737;
+    color: #343434;
 }
 
 .circle:hover {
     background-color: orange;
-    text-decoration-color: grey;
-    cursor: finger;
 }
 
 .sectionwrapper_kontakt {
@@ -135,6 +149,14 @@ header nav a {
     justify-content: space-around;
 }
 
+.sectionwrapper_kontakt a {
+    text-decoration: none;
+    color: #dbcbbb;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2rem;
+
+}
+
 #kontakt {
     height: 600px
 }
@@ -143,7 +165,7 @@ header nav a {
 footer {
     height: 130px;
     width: 100%;
-    background-color: #525252;
+    background-color: #122d41;
 }
 
 #some {
@@ -153,4 +175,59 @@ footer {
 
 #some h1:hover {
     color: orange;
+}
+
+/*-------------Undersider----------------*/
+
+.underside {
+    left: 70em;
+}
+
+.underside a {
+    font-family: 'Inconsolata', monospace;
+}
+
+#underside {
+    padding-top: 200px
+}
+
+/*-----------------titel-------------------*/
+#title {
+    position: absolute;
+    left: 13vw;
+    top: 50vw;
+}
+
+h2 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 5rem;
+    color: #a3998f;
+}
+
+h3 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 3rem;
+    color: #a3998f;
+}
+
+h2:hover {
+    color: beige;
+}
+
+h3:hover {
+    color: orange;
+}
+
+/*--------------Scroll--------------------*/
+#scroll {
+    position: absolute;
+    left: 47vw;
+    top: 43vw;
+    align-items: center;
+}
+
+h4 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    color: #a3998f;
 }
