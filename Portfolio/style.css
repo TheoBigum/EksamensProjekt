@@ -6,7 +6,6 @@
 
 html {
     font-size: 100%;
-    background-color: #011826;
     scroll-behavior: smooth;
 }
 
@@ -15,8 +14,8 @@ img {
 }
 
 body {
-    background-color: #011826;
-    height: 100vh;
+    background: rgb(2, 11, 18);
+    background: linear-gradient(90deg, rgba(2, 11, 18, 1) 0%, rgba(1, 21, 30, 1) 21%, rgba(3, 27, 39, 1) 37%, rgba(0, 27, 38, 1) 54%, rgba(0, 22, 33, 1) 69%, rgba(1, 18, 26, 1) 82%, rgba(1, 8, 14, 1) 100%);
 }
 
 h1 {
@@ -61,7 +60,6 @@ header nav a:active {
 
 header {
     position: fixed;
-    rgba(0, 212, 255, 0) 100%);
     width: 100%;
 }
 
@@ -69,23 +67,17 @@ header nav {
     display: flex;
     flex-direction: row;
     position: fixed;
-    left: 50em
-}
-
-index.html header nav {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    left: 1000px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5vw 7vw;
 }
 
 header nav a {
     font-size: 2.5rem;
     font-family: 'Inconsolata', monospace;
     text-decoration: none;
-    margin: 1rem;
-    padding: 1rem;
-    ;
+    padding-right: 4vw;
 }
 
 .sectionwrapper {
@@ -167,8 +159,16 @@ header nav a {
 footer {
     height: 20vh;
     width: 100%;
-    background-color: #122d41;
     position: absolute;
+}
+
+#earth img {
+    position: absolute;
+    width: 80%;
+    top: 357vh;
+    left: 10%
+}
+
 }
 
 #underside footer {
@@ -192,7 +192,12 @@ footer {
 /*-------------Undersider----------------*/
 
 .undersider {
-    left: 70em;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    display: block;
+    text-align: center;
+    padding: 5vw 7vw;
 }
 
 .undersider a {
