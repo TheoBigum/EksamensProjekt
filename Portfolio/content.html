@@ -8,17 +8,35 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <nav class="undersider">
+        <!-- Top Navigation Menu -->
+        <div class="narrow_nav">
+            <a href="#home" class="active"></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="index.html">Portfolio</a>
+            </div>
+
+            <!-- Toggle navigation ved tryk -->
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+
+        </div>
+        <nav class="wide_nav">
             <a href="index.html">Portfolio</a>
         </nav>
+
     </header>
 
     <section id="underside">
-        <h1>Content Projekter</h1>
+        <h1>Content</h1>
         <section class="sectionwrapper_circle">
 
             <div class="circle">
@@ -30,14 +48,7 @@
 
         </section>
 
-        <footer>
-            <section id="some">
-                <h1>Facebook</h1>
-                <h1>LinkedIn</h1>
-                <h1>Github</h1>
-            </section>
 
-        </footer>
     </section>
 
 

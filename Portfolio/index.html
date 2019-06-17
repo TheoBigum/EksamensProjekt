@@ -8,16 +8,36 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Antic+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <header>
-        <nav>
+        <!-- Top Navigation Menu -->
+        <div class="narrow_nav">
+            <a href="#home" class="active"></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#projekter">Projekter</a>
+                <a href="#om">Om mig</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+
+            <!-- Toggle navigation ved tryk -->
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <nav class="wide_nav">
             <a href="#projekter">Projekter</a>
             <a href="#om">Om mig</a>
-            <a href="#some">Kontakt</a>
+            <a href="#kontakt">Kontakt</a>
         </nav>
+
     </header>
 
     <section id="splash">
@@ -33,6 +53,7 @@
         <h2>Theo Bigum</h2>
         <h3>Multimedie Design</h3>
     </section>
+
 
     <section id="projekter">
         <h1>Projekter</h1>
@@ -59,10 +80,16 @@
         <section class="sectionwrapper">
             <div class="col">
                 <p>
-                    Theo Palshøj Bigum, 21 år, studerende på KEA Multimediedesign.
-                    <br>
+                    Mit Navn er Theo Palshøj Bigum.
                     <br>
 
+                    Jeg er 1. års studerende på Kea Multimediadesign.
+                    <br>
+                    <br>
+                    Iøjenfaldende design fryder mit øje, samtidig med at jeg også elsker at fordybe mig i digitale produkters opbygning.
+                    <br>
+                    <br>
+                    Essentielt for mig er at flot design og høj funktionalitet går hånd i hånd.
                 </p>
             </div>
         </section>
@@ -72,10 +99,10 @@
         <h1>Kontakt</h1>
         <section class="sectionwrapper_kontakt">
             <div class="circle">
-                <a href="mail">Mail</a>
+                <a href="mailto:Theobigum@gmail.com?Subject=Hej%20Theo" target="_top">Mail</a>
             </div>
             <div class="circle">
-                <a href="telefon">Telefon</a>
+                <a href="tel:60649724">Telefon</a>
             </div>
 
         </section>
@@ -83,9 +110,9 @@
 
     <footer>
         <section id="some">
-            <h1>Facebook</h1>
-            <h1>LinkedIn</h1>
-            <h1>Github</h1>
+            <a href="https://www.facebook.com/theobigum">Facebook</a>
+            <a href="https://www.linkedin.com/in/theo-bigum-15977212b/">LinkedIn</a>
+            <a href="https://github.com/TheoBigum">GitHub</a>
         </section>
     </footer>
     <section id="earth">

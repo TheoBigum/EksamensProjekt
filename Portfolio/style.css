@@ -23,7 +23,8 @@ h1 {
     font-size: 3rem;
     color: #a3998f;
     margin-left: 80px;
-    padding-top: 50px;
+    padding-top: 40px;
+
 }
 
 h1:hover {
@@ -37,7 +38,31 @@ p {
     margin: 30px;
 }
 
-/*NAV*/
+/*-----------------------Burgermenu----------------------*/
+.narrow_nav {
+    display: none;
+}
+
+/*-----------------------NAV-----------------------------*/
+
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    display: block;
+    text-align: center;
+    padding: 2vw 4vw;
+    left: 40%;
+}
+
+header nav a {
+    font-size: 2.5rem;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    padding-right: 4vw;
+}
+
 /* unvisited link */
 header nav a:link {
     color: #a3998f;
@@ -58,28 +83,7 @@ header nav a:active {
     color: #909090;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-}
-
-header nav {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 5vw 7vw;
-}
-
-header nav a {
-    font-size: 2.5rem;
-    font-family: 'Inconsolata', monospace;
-    text-decoration: none;
-    padding-right: 4vw;
-}
-
+/*-----------------------FLEXBOX-------------------*/
 .sectionwrapper {
     display: flex;
     margin: 50px;
@@ -116,19 +120,12 @@ header nav a {
 
 .circle {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    height: 13vw;
-    width: 13vw;
+    height: 16vw;
+    width: 16vw;
     border-radius: 300px;
     background-color: #4a555b;
     padding: 5vw;
-}
-
-.circle h1 {
-    margin-left: 0;
-    padding-top: 0;
-    color: #343434;
 }
 
 .circle:hover {
@@ -165,10 +162,8 @@ footer {
 #earth img {
     position: absolute;
     width: 80%;
-    top: 357vh;
+    top: 385vh;
     left: 10%
-}
-
 }
 
 #underside footer {
@@ -188,6 +183,17 @@ footer {
     color: orange;
 }
 
+#some a {
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    font-size: 3rem;
+    color: #a3998f;
+}
+
+#some a:hover {
+    color: orange;
+}
+
 
 /*-------------Undersider----------------*/
 
@@ -204,10 +210,10 @@ footer {
     font-family: 'Inconsolata', monospace;
 }
 
-#underside footer {
-    top: 80vh;
+#underside a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3rem;
 }
-
 
 
 /*-----------------titel-------------------*/
@@ -240,13 +246,178 @@ h3:hover {
 /*--------------Scroll--------------------*/
 #scroll {
     position: absolute;
-    left: 47vw;
-    top: 43vw;
-    align-items: center;
+    left: 46vw;
+    top: 40vw;
+    align-content: center;
 }
 
 h4 {
     font-family: 'Inconsolata', monospace;
     font-size: 1rem;
     color: #a3998f;
+}
+
+
+/*--------------Media Querries--------------*/
+/*-----------------Generelt----------------*/
+@media screen and (max-width: 800px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+
+
+    /*--------------Media Querries--------------*/
+    /*--------------------NAV------------------*/
+
+    .wide_nav {
+        display: none;
+    }
+
+    .narrow_nav {
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .narrow_nav #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .narrow_nav a {
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.5rem;
+        color: #a3998f;
+        text-decoration: none;
+        padding: 5px;
+        margin: 5px;
+        align-items: center;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    .narrow_nav a.icon {
+        background: #black;
+        display: block;
+        position: fixed;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .narrow_nav a:hover {
+        background-color: #a3998f;
+        color: black;
+    }
+
+    /*--------------Media Querries--------------*/
+    /*--------------Content--------------*/
+    .sectionwrapper_circle a:hover {
+        font-size: 2rem;
+
+    }
+
+    .circle a {
+        padding-top: 45px;
+    }
+
+    .sectionwrapper_circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .circle {
+        display: flex;
+        height: 200px;
+        width: 200px;
+        border-radius: 300px;
+        margin-left: 100px;
+        margin-top: 30px;
+
+    }
+
+    .sectionwrapper_kontakt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .sectionwrapper_kontakt a {
+        font-size: 2rem;
+        padding: 10px;
+        padding-top: 48px;
+
+    }
+
+    #kontakt {
+        height: 600px
+    }
+
+    /*--------------Media Querries--------------*/
+    /*--------------Scroll---------------------*/
+    #scroll {
+        display: none;
+    }
+
+    /*--------------Media Querries--------------*/
+    /*--------------Footer--------------*/
+
+    #some a {
+        font-size: 1.7rem;
+        margin-top: 15px;
+    }
+
+    #earth img {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        position: bottom;
+    }
+
+    /*--------------Media Querries--------------*/
+    /*--------------Undersider--------------*/
+
+    .undersider {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        display: block;
+        text-align: center;
+    }
+
+    #underside .circle a {
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.4rem;
+        margin: 33px;
+        padding: 0;
+
+    }
+
+    #underside h1 {
+        font-size: 2.4rem;
+        margin: 40px;
+        padding-top: 60px;
+        top: 120vh;
+
+    }
+
+    #underside #some {
+        background: linear-gradient(90deg, rgba(2, 11, 18, 1) 0%, rgba(1, 21, 30, 1) 21%, rgba(3, 27, 39, 1) 37%, rgba(0, 27, 38, 1) 54%, rgba(0, 22, 33, 1) 69%, rgba(1, 18, 26, 1) 82%, rgba(1, 8, 14, 1) 100%);
+    }
+
 }
