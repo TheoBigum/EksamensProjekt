@@ -33,10 +33,57 @@ h1:hover {
 
 p {
     font-family: 'Antic Slab', serif;
-    font-size: 2em;
+    font-size: 1.5rem;
     color: #a3998f;
     margin: 30px;
 }
+
+/*ANIMATION OVER SPLASH*/
+.ani1 img {
+    width: 30%;
+    position: absolute;
+    opacity: 12%;
+    animation: mistani1;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ani2 img {
+    width: 60%;
+    position: absolute;
+    opacity: 10%;
+    animation: mistani2;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes mistani1 {
+    0% {
+        top: 55vh;
+        left: -40vw;
+    }
+
+    100% {
+        top: 55vh;
+        left: 100vw;
+    }
+}
+
+@keyframes mistani2 {
+    0% {
+        top: 60vh;
+        right: -65vw;
+    }
+
+    100% {
+        top: 60vh;
+        right: 100vw;
+    }
+}
+
 
 /*-----------------------Burgermenu----------------------*/
 .narrow_nav {
@@ -111,7 +158,6 @@ header nav a:active {
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
     font-size: 2rem;
-    color: #000000;
 }
 
 .col {
@@ -125,7 +171,7 @@ header nav a:active {
     width: 16vw;
     border-radius: 300px;
     background-color: #4a555b;
-    padding: 5vw;
+    padding: 6vw;
 }
 
 .circle:hover {
@@ -197,22 +243,22 @@ footer {
 
 /*-------------Undersider----------------*/
 
-.undersider {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    display: block;
-    text-align: center;
-    padding: 5vw 7vw;
-}
-
-.undersider a {
-    font-family: 'Inconsolata', monospace;
-}
 
 #underside a {
     font-family: 'Inconsolata', monospace;
     font-size: 1.3rem;
+}
+
+a:-webkit-any-link {
+    font-family: 'Inconsolata', monospace;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+#underside p {
+    font-size: 1.5rem;
+    margin: 100px;
 }
 
 
@@ -418,6 +464,42 @@ h4 {
 
     #underside #some {
         background: linear-gradient(90deg, rgba(2, 11, 18, 1) 0%, rgba(1, 21, 30, 1) 21%, rgba(3, 27, 39, 1) 37%, rgba(0, 27, 38, 1) 54%, rgba(0, 22, 33, 1) 69%, rgba(1, 18, 26, 1) 82%, rgba(1, 8, 14, 1) 100%);
+    }
+
+    #underside p {
+        font-size: 1rem;
+        margin: 30px;
+    }
+
+
+
+    /*--------------Media Querries--------------*/
+    /*--------------Mist Animation--------------*/
+
+
+
+    @keyframes mistani1 {
+        0% {
+            top: 15vh;
+            left: -40vw;
+        }
+
+        100% {
+            top: 15vh;
+            left: 100vw;
+        }
+    }
+
+    @keyframes mistani2 {
+        0% {
+            top: 22vh;
+            right: -65vw;
+        }
+
+        100% {
+            top: 22vh;
+            right: 100vw;
+        }
     }
 
 }
